@@ -38,3 +38,8 @@ if matches3:
         print(match)
 else:
     print("No matches found in Text 3")
+
+# text4 = "Shrey g is a great  1234 @ jain" # fail
+text4 = "Shrey g is a great 1234 @ jain"
+pattern4 = r'g\w+\s\d{4}'
+print(re.search(pattern4, text4).group())
